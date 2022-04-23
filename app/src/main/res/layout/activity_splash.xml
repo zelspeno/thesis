@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:fitsSystemWindows="true"
-    tools:context=".screens.main.MainActivity">
+    tools:context=".screens.splash.SplashActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/splashContainer"
@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/main_graph"
+        app:navGraph="@navigation/splash_graph"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

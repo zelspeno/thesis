@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.main.SignInFragment"
+    android:background="@color/mainBackgroundColor">
+
+    <TextView
+        android:id="@+id/eJournalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/e_journal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/maintext_size"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/chemkTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/chemk"
+        android:textColor="@color/white"
+        android:textSize="@dimen/maintext_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eJournalTV"/>
+
+    <ImageView
+        android:id="@+id/mainLogoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eJournalTV"
+        app:srcCompat="@drawable/whitelogo" />
+
+    <TextView
+        android:id="@+id/enterLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/logpass_size"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/mainLogoImage" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textCursorDrawable="@color/black"
+        android:textSize="@dimen/logpass_size"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@id/enterLogin" />
+
+    <TextView
+        android:id="@+id/enterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/logpass_size"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/enterLogin"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/password"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/password"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@color/black"
+        android:textSize="@dimen/logpass_size"
+        android:imeOptions="actionDone"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintEnd_toStartOf="@+id/space2"
+        app:layout_constraintStart_toEndOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
+
+    <TextView
+        android:id="@+id/forget_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:text="@string/forget_pass"
+        android:textColor="@color/white"
+        android:textSize="@dimen/logpass_size"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/enterButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/enterButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedcorners_button"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/enter"
+        android:textColor="@color/black"
+        android:textSize="@dimen/maintext_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/forget_pass"
+        app:layout_constraintStart_toStartOf="@+id/forget_pass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

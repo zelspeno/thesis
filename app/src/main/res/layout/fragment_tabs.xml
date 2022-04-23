@@ -6,15 +6,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:fitsSystemWindows="true"
-    tools:context=".screens.main.MainActivity">
+    tools:context=".screens.main.TabsFragment">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/splashContainer"
+        android:id="@+id/tabsContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/main_graph"
-        />
+        app:navGraph="@navigation/tabs_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:menu="@menu/main_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">thesis</string>
+    <string name="app_name">Журнал</string>
+    <string name="loading">Загрузка..</string>
+    <string name="e_journal">ЭЛЕКТРОННЫЙ ЖУРНАЛ</string>
+    <string name="chemk">МЦК - ЧЭМК</string>
+    <string name="login">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="forget_pass">не можете войти?</string>
+    <string name="enter">ВОЙТИ</string>
+    <string name="news">Новости</string>
+    <string name="journal">Журнал</string>
+    <string name="home">Главная</string>
+    <string name="messenger">Связь</string>
+    <string name="profile">Профиль</string>
+    <string name="office_number">201М</string>
+    <string name="admin_phone">8(800)555-35-35</string>
 </resources>
