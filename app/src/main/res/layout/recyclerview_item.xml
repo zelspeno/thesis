@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/r_title"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/title"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:textSize="@dimen/maintext_size"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/r_body"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:maxLines="8"
+            android:ellipsize="end"
+            android:text="@string/body"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="@dimen/body_size"
+            app:layout_constraintStart_toEndOf="@id/r_image"
+            app:layout_constraintBottom_toBottomOf="@id/r_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/r_title" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/r_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moreInfo"
+            android:clickable="true"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="italic"
+            android:textSize="@dimen/bottext_size"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/r_body"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/r_date"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="italic"
+            android:textSize="@dimen/bottext_size"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/r_image"
+            app:layout_constraintBottom_toBottomOf="@id/r_more"/>
+
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/r_image"
+            android:layout_marginStart="5dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/r_body" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

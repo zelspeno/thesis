@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1475" />
+        <entry key="..\:/kotlinProjects/thesis/app/src/main/res/drawable/imageview_border.xml" value="0.147" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/drawable/navigationview_colored.xml" value="0.1475" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/drawable/roundedcorners_button.xml" value="0.1475" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/activity_main.xml" value="0.16171875" />
@@ -11,11 +12,13 @@
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/fragment_home.xml" value="0.13852073535699017" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/fragment_journal.xml" value="0.13852073535699017" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/fragment_messenger.xml" value="0.13852073535699017" />
-        <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/fragment_news.xml" value="0.13852073535699017" />
+        <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/fragment_news.xml" value="0.25" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/fragment_profile.xml" value="0.13852073535699017" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/fragment_sign_in.xml" value="0.25" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/fragment_splash.xml" value="0.17" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/fragment_tabs.xml" value="0.23076923076923078" />
+        <entry key="..\:/kotlinProjects/thesis/app/src/main/res/layout/recyclerview_item.xml" value="0.25" />
+        <entry key="..\:/kotlinProjects/thesis/app/src/main/res/menu/main_menu.xml" value="0.27704147071398033" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/menu/menu.xml" value="0.25" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1475" />
         <entry key="..\:/kotlinProjects/thesis/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1475" />

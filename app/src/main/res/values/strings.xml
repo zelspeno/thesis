@@ -14,4 +14,8 @@
     <string name="profile">Профиль</string>
     <string name="office_number">201М</string>
     <string name="admin_phone">8(800)555-35-35</string>
+    <string name="title">Заголовок</string>
+    <string name="body">Основная информация</string>
+    <string name="moreInfo">Подробнее..</string>
+    <string name="date">Опубликовано</string>
 </resources>
