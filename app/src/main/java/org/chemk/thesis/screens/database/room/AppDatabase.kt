@@ -7,7 +7,7 @@ import org.chemk.thesis.screens.database.accounts.room.entities.AccountDBEntity
 
 
 @Database(
-    version = 1,
+    version = 2,
     entities = [
         AccountDBEntity::class,
     ]

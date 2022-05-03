@@ -8,11 +8,16 @@ import androidx.fragment.app.Fragment
 import org.chemk.thesis.R
 import org.chemk.thesis.databinding.FragmentSplashBinding
 import org.chemk.thesis.screens.main.MainActivity
+import org.chemk.thesis.screens.main.MainActivityArgs
+import org.chemk.thesis.screens.models.Repositories
+import org.chemk.thesis.screens.models.viewModelCreator
+import org.chemk.thesis.screens.utils.observeEvent
 import kotlin.concurrent.timer
 
 class SplashFragment : Fragment(R.layout.fragment_splash) {
 
     private lateinit var binding: FragmentSplashBinding
+    private val viewModel by viewModelCreator { SplashViewModel(Repositories.accountsRepository) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -20,8 +25,9 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
 
         renderAnimations()
         
-        val intent = Intent(requireContext(), MainActivity::class.java)
-        startActivity(intent)
+        viewModel.launchMainScreenEvent.observeEvent(viewLifecycleOwner) {
+            launchMainScreen(it)
+        }
 
     }
     private fun renderAnimations() {
@@ -38,5 +44,16 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
             .setDuration(1000)
             .start()
 
+    }
+
+    private fun launchMainScreen(isSignedIn: Boolean) {
+
+        val intent = Intent(requireContext(), MainActivity::class.java)
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+
+        val args = MainActivityArgs(isSignedIn)
+        intent.putExtras(args.toBundle())
+        startActivity(intent)
     }
 }

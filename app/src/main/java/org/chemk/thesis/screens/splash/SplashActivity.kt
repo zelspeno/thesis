@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import org.chemk.thesis.R
+import org.chemk.thesis.screens.models.Repositories
 
 /**
  * Вход в приложение
@@ -14,6 +15,7 @@ import org.chemk.thesis.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        Repositories.init(applicationContext)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
     }

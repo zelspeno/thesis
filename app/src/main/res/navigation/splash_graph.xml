@@ -18,5 +18,10 @@
         android:id="@+id/mainActivity"
         android:name="org.chemk.thesis.screens.main.MainActivity"
         android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+        tools:layout="@layout/activity_main">
+        <argument
+            android:name="isSignedIn"
+            app:argType="boolean"/>
+    </activity>
+
 </navigation>

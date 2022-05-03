@@ -10,6 +10,11 @@ data class AccountUpdateEmailTuple(
     val email: String
 )
 
+data class AccountUpdatePasswordTuple(
+    val id: Long,
+    val password: String
+)
+
 data class AccountFullnameTuple(
     val name: String,
     val surname: String,

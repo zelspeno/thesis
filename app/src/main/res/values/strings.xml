@@ -18,4 +18,5 @@
     <string name="body">Основная информация</string>
     <string name="moreInfo">Подробнее..</string>
     <string name="date">Опубликовано</string>
+    <string name="WrongData">Неверные данные</string>
 </resources>

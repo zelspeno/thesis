@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.Flow
 import org.chemk.thesis.screens.database.accounts.entities.AccountFullnameTuple
 import org.chemk.thesis.screens.database.accounts.entities.AccountSignInTuple
 import org.chemk.thesis.screens.database.accounts.entities.AccountUpdateEmailTuple
+import org.chemk.thesis.screens.database.accounts.entities.AccountUpdatePasswordTuple
 import org.chemk.thesis.screens.database.accounts.room.entities.AccountDBEntity
 
 @Dao
@@ -24,7 +25,11 @@ interface AccountsDao {
     @Update(entity = AccountDBEntity::class)
     suspend fun updateEmail(updateEmailTuple: AccountUpdateEmailTuple)
 
+    @Update(entity = AccountDBEntity::class)
+    suspend fun updatePassword(updatePasswordTuple: AccountUpdatePasswordTuple)
+
     @Query("SELECT id, password FROM accounts WHERE username = :username")
     suspend fun findByUsername(username: String): AccountSignInTuple
+
 
 }
