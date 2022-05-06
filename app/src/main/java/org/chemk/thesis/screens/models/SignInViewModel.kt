@@ -25,7 +25,6 @@ class SignInViewModel(private val accountsRepository: AccountsRepository) : View
 
 
     fun signIn(username: String, password: String) = viewModelScope.launch {
-        Log.d("Data", "$username $password")
         if (accountsRepository.signIn(username, password)) {
             launchTabsScreen()
         } else launchAlertDialog()

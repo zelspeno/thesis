@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@color/mainBackgroundColor"
-        android:text="Новости"
+        android:text="@string/news"
         android:textSize="@dimen/maintext_size"
         android:textAlignment="center"
         android:fontFamily="sans-serif-medium"

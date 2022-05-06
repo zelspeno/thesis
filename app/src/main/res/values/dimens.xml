@@ -5,4 +5,5 @@
     <dimen name="logpass_size">12sp</dimen>
     <dimen name="body_size">18sp</dimen>
     <dimen name="bottext_size">12sp</dimen>
+    <dimen name="profileBodyTextSize">20sp</dimen>
 </resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "309117780604",
+    "firebase_url": "https://thesis-f644b-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "thesis-f644b",
+    "storage_bucket": "thesis-f644b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309117780604:android:a8e36d980eac2de06b7ff9",
+        "android_client_info": {
+          "package_name": "org.chemk.thesis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309117780604-ll4drnpbcmgq10lrn87bllmn2n1mdn4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1flM81SfK-divY5tNVVsaGZ4Sn5empR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309117780604-ll4drnpbcmgq10lrn87bllmn2n1mdn4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

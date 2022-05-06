@@ -34,4 +34,14 @@ interface AccountsRepository {
      */
     suspend fun updateAccountPassword(newPassword: String)
 
+    /**
+     * Обновить эмейл юзера
+     */
+    suspend fun updateAccountEmail(newEmail: String)
+
+    /**
+     * Получить информацию о авторизированном юзере
+     */
+    suspend fun getAccount(): Flow<Account?>
+
 }

@@ -37,7 +37,7 @@ data class AccountDBEntity(
         role = role,
         group = group,
         course = course,
-        formEdu = formEdu
+        formEdu = formEdu,
     )
 
 }

@@ -17,6 +17,6 @@ interface AppSettings {
         /**
          *  Отобразить, что пользователь не зашел в аккаунт
          */
-        const val NO_ACCOUNT_ID: Long = 1
+        const val NO_ACCOUNT_ID: Long = -1
     }
 }

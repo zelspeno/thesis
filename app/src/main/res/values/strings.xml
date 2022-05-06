@@ -19,4 +19,12 @@
     <string name="moreInfo">Подробнее..</string>
     <string name="date">Опубликовано</string>
     <string name="WrongData">Неверные данные</string>
+    <string name="group">Группа</string>
+    <string name="course">Курс</string>
+    <string name="status">Статус</string>
+    <string name="formEdu">Форма обучения</string>
+    <string name="email">Эл. почта</string>
+    <string name="editData">Изменить данные</string>
+    <string name="saveChanges">Сохранить изменения</string>
+    <string name="logout">Выйти из аккаунта</string>
 </resources>

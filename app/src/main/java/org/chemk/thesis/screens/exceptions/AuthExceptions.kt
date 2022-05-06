@@ -23,6 +23,22 @@ class WrongData(): DialogFragment() {
     }
 }
 
+class WrongEmail(): DialogFragment() {
+
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+
+        return activity?.let {
+            val builder = AlertDialog.Builder(it)
+            builder.setTitle("Email не подходит под требования!")
+                .setMessage("Введите валидный email адрес")
+                .setPositiveButton("Закрыть") { dialog, _ ->
+                    dialog.cancel()
+                }
+            builder.create()
+        } ?: throw IllegalStateException("Activity can't be null")
+    }
+}
+
 class ForgetData(): DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
