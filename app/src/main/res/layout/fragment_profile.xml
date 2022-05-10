@@ -173,39 +173,6 @@
             android:inputType="textEmailAddress" />
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/editProfileButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/roundedcorners_button"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/editData"
-            android:textColor="@color/black"
-            android:textSize="@dimen/body_size"
-            android:textStyle="bold"
-            android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@id/profileEmail"
-            app:layout_constraintEnd_toEndOf="@id/profileImage"
-            app:layout_constraintStart_toStartOf="@id/profileImage"
-            android:visibility="visible"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/saveProfileButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/roundedcorners_button"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/saveChanges"
-            android:textColor="@color/black"
-            android:textSize="@dimen/body_size"
-            android:textStyle="bold"
-            android:backgroundTint="#FF5C00"
-            android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@id/profileEmail"
-            app:layout_constraintEnd_toEndOf="@id/profileImage"
-            app:layout_constraintStart_toStartOf="@id/profileImage"
-            app:layout_constraintBottom_toTopOf="@id/logoutButton"
-            android:visibility="gone"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/logoutButton"
@@ -218,11 +185,11 @@
             android:textColor="@color/black"
             android:textSize="@dimen/body_size"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/editProfileButton"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/profileEmail"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/profileImage"
-            app:layout_constraintStart_toStartOf="@id/profileImage"
-            android:visibility="visible"/>
+            app:layout_constraintStart_toStartOf="@id/profileImage" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

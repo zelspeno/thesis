@@ -27,4 +27,5 @@
     <string name="editData">Изменить данные</string>
     <string name="saveChanges">Сохранить изменения</string>
     <string name="logout">Выйти из аккаунта</string>
+    <string name="checkSchedule">Просмотр расписания</string>
 </resources>

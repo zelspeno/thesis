@@ -5,14 +5,14 @@ package org.chemk.thesis.screens.database.accounts.entities
  */
 
 data class Account(
-    val id: Long,
-    val username: String,
-    val email: String,
-    val name: String,
-    val surname: String,
-    val midname: String,
-    val role: String,
-    val group: String,
-    val course: String,
-    val formEdu: Boolean
+    val id: String = "",
+    val email: String = "",
+    val name: String = "",
+    val surname: String = "",
+    val midname: String = "",
+    val role: String = "",
+    val group: String = "",
+    val course: String = "",
+    val formEdu: Boolean = true,
+    val photoURL: String = ""
 )

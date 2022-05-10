@@ -1,7 +1,9 @@
 package org.chemk.thesis.screens.database.accounts.room
 
+import android.content.Intent
 import android.util.Log
 import androidx.fragment.app.FragmentManager
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.*
 import org.chemk.thesis.screens.database.accounts.AccountsRepository
@@ -19,25 +21,25 @@ class RoomAccountsRepository(
     private val ioDispatcher: CoroutineDispatcher
 ): AccountsRepository {
 
+    private lateinit var firebaseAuth: FirebaseAuth
+
     private val currentAccountIdFlow = AsyncLoader {
         MutableStateFlow(AccountId(appSettings.getCurrentAccountId()))
     }
 
     override suspend fun isSignedIn(): Boolean {
-        return appSettings.getCurrentAccountId() != AppSettings.NO_ACCOUNT_ID
+
+        firebaseAuth = FirebaseAuth.getInstance()
+        val firebaseUser = firebaseAuth.currentUser
+        return firebaseUser != null
+
     }
 
-    override suspend fun signIn(username: String, password: String): Boolean {
-        if (username.isBlank() || password.isBlank()) return false
-        val accountId = findAccountIdByUsernameAndPassword(username, password)
-        if (accountId != null) {
-            appSettings.setCurrentAccountId(accountId)
-            return true
-        } else return false
-    }
+    override suspend fun signIn(username: String, password: String): Boolean =
+        (!(username.isBlank() || password.isBlank()))
 
     override suspend fun logout() {
-        appSettings.setCurrentAccountId(AppSettings.NO_ACCOUNT_ID)
+        firebaseAuth.signOut()
     }
 
     override suspend fun getAccountInfo(accountId: Long): Flow<Account?> =

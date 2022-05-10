@@ -8,13 +8,34 @@
     android:background="@color/mainBackgroundColor">
 
     <TextView
+        android:id="@+id/frHomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="THIS IS HOME"
+        android:text="Нажмите ниже для просмотра расписания"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/maintext_size"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/moveToScheduleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/frHomeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/roundedcorners_button"
+        android:text="@string/checkSchedule"
+        android:textSize="@dimen/maintext_size"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

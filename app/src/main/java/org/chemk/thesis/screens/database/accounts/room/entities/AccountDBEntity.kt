@@ -14,7 +14,7 @@ import org.chemk.thesis.screens.database.accounts.entities.Account
 )
 
 data class AccountDBEntity(
-    @PrimaryKey(autoGenerate = true) val id: Long,
+    @PrimaryKey val id: String,
     @ColumnInfo(collate = ColumnInfo.NOCASE) val username: String,
     @ColumnInfo(collate = ColumnInfo.NOCASE) val email: String,
     val password: String,
@@ -24,12 +24,12 @@ data class AccountDBEntity(
     val role: String,
     val group: String,
     val course: String,
-    @ColumnInfo(name = "form_edu") val formEdu: Boolean
+    @ColumnInfo(name = "form_edu") val formEdu: Boolean,
+    val photoURL:String
 ) {
 
     fun toAccount(): Account = Account(
         id = id,
-        username = username,
         email = email,
         name = name,
         surname = surname,
@@ -38,6 +38,7 @@ data class AccountDBEntity(
         group = group,
         course = course,
         formEdu = formEdu,
+        photoURL = photoURL
     )
 
 }
