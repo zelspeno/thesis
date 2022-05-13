@@ -2,15 +2,11 @@ package org.chemk.thesis.screens.news
 
 import android.content.Intent
 import android.net.Uri
-import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.VideoView
-import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import org.chemk.thesis.R

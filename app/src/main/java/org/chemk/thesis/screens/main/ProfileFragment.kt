@@ -40,7 +40,6 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
         Log.d("Firebase auth", "${firebaseAuth.uid}")
 
-
         binding.logoutButton.setOnClickListener {
             viewModel.logout()
         }

@@ -24,14 +24,15 @@ class MainActivity : AppCompatActivity() {
         prepareToLogin(isSignedIn(), getRootNavController())
     }
 
-    private fun initUser() {
-        initFirebase()
-        val uid = firebaseAuth.currentUser?.uid.toString()
-        REF_DATABASE_ROOT.child(NODE_USERS).child(uid)
-            .addListenerForSingleValueEvent(AppValueEventListener {
-                USER = it.getValue(Account::class.java) ?: Account()
-            })
-    }
+//    private fun initUser() {
+//        initFirebase()
+//        USER = Account()
+//        val uid = firebaseAuth.currentUser?.uid.toString()
+//        REF_DATABASE_ROOT.child(NODE_USERS).child(uid)
+//            .addListenerForSingleValueEvent(AppValueEventListener {
+//                USER = it.getValue(Account::class.java) ?: Account()
+//            })
+//    }
 
     private fun prepareToLogin(isSignedIn: Boolean, navController: NavController) {
         val graph = navController.navInflater.inflate(R.navigation.main_graph)

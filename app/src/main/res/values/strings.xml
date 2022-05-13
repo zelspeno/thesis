@@ -28,4 +28,10 @@
     <string name="saveChanges">Сохранить изменения</string>
     <string name="logout">Выйти из аккаунта</string>
     <string name="checkSchedule">Просмотр расписания</string>
+    <string name="subject">Предмет</string>
+    <string name="teacher">Преподаватель</string>
+    <string name="classroom">Кабинет</string>
+    <string name="week">Неделя</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="today">Сегодня</string>
 </resources>
