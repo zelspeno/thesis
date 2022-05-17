@@ -34,4 +34,9 @@
     <string name="week">Неделя</string>
     <string name="tomorrow">Завтра</string>
     <string name="today">Сегодня</string>
+    <string name="period">Период</string>
+    <string name="day">День</string>
+    <string name="mark">Оценка</string>
+    <string name="show_journal">Отобразить журнал</string>
+
 </resources>

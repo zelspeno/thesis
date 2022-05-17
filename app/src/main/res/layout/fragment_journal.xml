@@ -8,13 +8,89 @@
     android:background="@color/mainBackgroundColor">
 
     <TextView
+        android:id="@+id/j_periodTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="THIS IS JOURNAL"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/period"
+        android:textColor="@color/white"
+        android:textSize="@dimen/maintext_size"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
+
+    <TextView
+        android:id="@+id/j_subjectTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subject"
+        android:textColor="@color/white"
+        android:textSize="@dimen/maintext_size"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/j_periodTV"
+        app:layout_constraintStart_toStartOf="@id/j_periodTV"
+        />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/j_periodST"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/j_periodTV"
+        app:layout_constraintTop_toTopOf="@id/j_periodTV"
+        app:layout_constraintBottom_toBottomOf="@id/j_periodTV"
+        android:background="@drawable/roundedcorners_textview"
+        />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/j_subjectST"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundedcorners_textview"
+        app:layout_constraintTop_toTopOf="@id/j_subjectTV"
+        app:layout_constraintStart_toStartOf="@id/j_periodST"
+        app:layout_constraintEnd_toEndOf="@id/j_periodST"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/journalRV"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        tools:listitem="@layout/journalrecyclerview_item"
+        app:layout_constraintTop_toBottomOf="@id/j_subjectTV"
+        app:layout_constraintStart_toStartOf="@id/j_subjectTV"
+        app:layout_constraintEnd_toEndOf="@id/j_subjectST"
+        app:layout_constraintBottom_toTopOf="@id/showJournalBtn"
+        android:scrollbars="horizontal" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/showJournalBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedcorners_button"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/show_journal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/maintext_size"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 
 

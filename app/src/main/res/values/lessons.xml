@@ -1,0 +1,11 @@
+<resources>
+    <string name="L_ENG">Иностранный язык в профессиональной деятельности</string>
+    <string name="L_COMP_MOD">Компьютерное моделирование</string>
+    <string name="L_TEST_PM">МДК 01.02 Поддержка и тестирование программных модулей</string>
+    <string name="L_DEV_MOB">МДК.01.03 Разработка мобильных приложений</string>
+    <string name="L_DEV_PA">МДК.02.01 \' Технология разработки программного обеспечения</string>
+    <string name="L_COMP_WS">МДК.02.01 \' МДК.13.01 \'Компетенция Ворлдскиллс Россия ИТ-решения для бизнеса на платформе 1С Предприятие 8</string>
+    <string name="L_MANAGEMENT">Менеджмент в профессиональной деятельности</string>
+    <string name="L_PHILOSOPHY">Основы философии</string>
+    <string name="L_PHYSICAL_LESSONS">Физическая культура</string>
+</resources>
