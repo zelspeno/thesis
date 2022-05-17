@@ -15,6 +15,7 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -80,8 +81,11 @@ dependencies {
     implementation 'com.google.firebase:firebase-database-ktx:20.0.5'
 
     // working w excel files
-    implementation 'org.apache.poi:poi:5.2.2'
-    implementation 'org.apache.poi:poi-ooxml:5.2.2'
+//    implementation 'org.apache.poi:poi:5.2.2'
+//    implementation 'org.apache.poi:poi-ooxml:5.2.2'
 
     implementation 'stax:stax-api:1.0.1'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'io.github.september26:excelview-poi:0.9.4'
 }
