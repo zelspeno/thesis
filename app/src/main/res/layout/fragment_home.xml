@@ -10,7 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content" >
 
     <TextView
         android:id="@+id/frHomeTextView"
@@ -54,7 +54,8 @@
         android:fontFamily="sans-serif-medium"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginEnd="30dp"/>
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/scheduleTomorrowButton"
@@ -71,7 +72,8 @@
         android:fontFamily="sans-serif-medium"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginStart="30dp"/>
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"/>
 
     <Space
         android:id="@+id/scheduleSpace"

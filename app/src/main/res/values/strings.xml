@@ -38,5 +38,21 @@
     <string name="day">День</string>
     <string name="mark">Оценка</string>
     <string name="show_journal">Отобразить журнал</string>
+    <string name="contacts">Контактная информация</string>
+    <string name="location">Местонахождение (юридический адрес)</string>
+    <string name="locationText">428000, Чувашская Республика, г. Чебоксары, проспект Ленина, дом 9</string>
+    <string name="reception">Приёмная директора</string>
+    <string name="receptionText">тел./факс (8352) 22-43-83</string>
+    <string name="address">Фактический адрес и контакты</string>
+    <string name="workMode">Режим и график работы</string>
+    <string name="campus1">1 корпус</string>
+    <string name="campus2">2 корпус</string>
+    <string name="campus3">3 корпус</string>
+    <string name="campus4">4 корпус</string>
+    <string name="campus5">5 корпус</string>
+    <string name="hostels">Общежития</string>
+    <string name="hostel1">Общежитие №1</string>
+    <string name="hostel2">Общежитие №2</string>
+    <string name="downloadWorkMode">Открыть режим и график работы</string>
 
 </resources>

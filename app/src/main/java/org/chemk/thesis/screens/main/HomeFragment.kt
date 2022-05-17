@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
@@ -46,6 +47,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     val tomorrow = getTomorrowOfWeek()
 
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentHomeBinding.bind(view)
@@ -53,13 +55,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val sdf = SimpleDateFormat("dd.MM.YY")
         val currentDate = sdf.format(java.util.Calendar.getInstance().time)
 
-
         binding.frHomeTextView.text = "Расписание на $currentDate \n группа ${getGroup()}"
-
 
         val groups = getGroupsWithRc()
         val group = groups[getGroup()].toString()
-
 
         binding.scheduleTomorrowButton.setOnClickListener {
             val tomorrowDate = LocalDate.now().plusDays(1).format(DateTimeFormatter.ofPattern("dd.MM.YY"))
@@ -144,7 +143,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             } else {
 
                 val rc = groupsWRC[getGroup()].toString()
-                val rcIndex = viewModel.getRowCellByIndexes(rc, day)
+                viewModel.getRowCellByIndexes(rc, day)
                 wSchedule = it
                 when (day) {
                     "MONDAY" -> {
