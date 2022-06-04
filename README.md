@@ -4,7 +4,7 @@
 ```
 1. Go to ‘File – New – Project from Version Control’ and choose Git
 2. The ‘clone repository’ window is shown
-3. Paste to git repository URL: git@github.com:dsfgdfgdfdgdgdfg456/thesis.git
+3. Paste to git repository URL: git@github.com:zelspeno/thesis.git
 4. Choose the parent directory where you want to store the workspace on your hard drive and click the ‘Clone’-button.
 ```
 
