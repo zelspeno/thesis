@@ -20,3 +20,11 @@
 1. minSdk version is 26
 2. All permissions in AndroidManifest.xml file
 ```
+
+## test user
+```
+
+log: test@gmail.com
+pass: 123456
+
+```
